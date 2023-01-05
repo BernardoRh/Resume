@@ -30,9 +30,6 @@ export function Home(){
                                 Possuo experiência em projetos, você pode conferir alguns deles disponíveis no meu portfólio.
                             </p>
                             <div>
-                                <span><WhatsappLogo size={32} weight="fill"/>(51) 99017-9621</span>
-                                <span><InstagramLogo size={32} weight="fill" />bernardorh</span>
-                                <span><Envelope size={32} weight="bold"/>bernardo.horbach@gmail.com</span>
                             </div>
                         </div>
                     </div>
@@ -40,6 +37,36 @@ export function Home(){
             </main>
             <ContainerContent>
                 <div>
+                    <div>
+                        <div>
+                            <Dots color="blue" size="sm"></Dots>
+                            <Dots color="pink" size="sm"></Dots>
+                            <Dots color="yellow" size="sm"></Dots>
+                        </div>
+                        <div>
+                            <h4>Contatos</h4>
+                            <div>
+                                <span>
+                                    <div>
+                                        <WhatsappLogo size={32} weight="fill"/>
+                                        (51) 99017-9621
+                                    </div>
+                                </span>
+                                <span>
+                                    <div>
+                                        <InstagramLogo size={32} weight="fill" />
+                                        bernardorh
+                                    </div>
+                                </span>
+                                <span>
+                                    <div>
+                                        <Envelope size={32} weight="bold"/>
+                                        bernardo.horbach@gmail.com
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                     <div>
                         <div>
                             <Dots color="blue" size="sm"></Dots>
@@ -82,8 +109,10 @@ export function Home(){
                             </div>
                         </div>
                     </div>
+                </div>
+                <div>
+                <div>
                     <div>
-                        <div>
                             <Dots color="pink" size="sm"></Dots>
                             <Dots color="blue" size="sm"></Dots>
                             <Dots color="yellow" size="sm"></Dots>
@@ -98,8 +127,6 @@ export function Home(){
                             </div>
                         </div>
                     </div>
-                </div>
-                <div>
                     <div>
                         <div>
                             <Dots color="pink" size="sm"></Dots>
@@ -114,14 +141,12 @@ export function Home(){
                                         <ul>
                                             <li>React</li>
                                             <li>Figma</li>
-                                            <li>Storybook</li>
                                             <li>TypeScript</li>
                                         </ul>
                                     </div>
                                     <div>
                                         <ProgressBar percentage={53}/>
                                         <ProgressBar percentage={67}/>
-                                        <ProgressBar percentage={75}/>
                                         <ProgressBar percentage={60}/>
                                     </div>
                                 </div>

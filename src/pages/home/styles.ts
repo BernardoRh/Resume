@@ -200,8 +200,14 @@ export const ContainerContent = styled.div`
                     }
 
                     span {
-
                         max-width: 24rem;
+
+                        div {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-weight: 800;
+                        }
 
                         h5 {
                             font-size: 0.925rem;
@@ -296,7 +302,6 @@ export const ContainerContent = styled.div`
                             padding: 0;
                             row-gap: 0.25rem;
                             column-gap: 0.5rem;
-                            font-size: 0.9rem;
                             justify-content: flex-start;
                         }
                     }
