@@ -7,6 +7,8 @@ interface progressStatus {
 export const WrappProgressBar = styled.div`
     display: flex;
     flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
 `
 
 export const ContainerProgressBar = styled.div<progressStatus>`

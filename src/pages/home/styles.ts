@@ -120,6 +120,7 @@ export const ContainerContent = styled.div`
     display: flex;
     flex-direction: row;
     gap: 1.5rem;
+    margin-bottom: 2.5rem;
 
     div {
         margin: 0;
@@ -268,7 +269,9 @@ export const ContainerContent = styled.div`
                         }
 
                         div:first-child {
-
+                            display: flex;
+                            align-items: flex-start;
+                            
                             ul {
                                 display: flex;
                                 flex-direction: column;
@@ -308,5 +311,39 @@ export const ContainerContent = styled.div`
                 }
             }
         }
+
+        footer {
+            margin-top: calc(0px - 0.5rem);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            font-size: 1rem;
+            font-weight: 800;
+            color: ${props => props.theme['silk']};
+            gap: 1.5rem;
+
+            div {
+                background: transparent;
+                border: none;
+                outline: none;
+                padding: 0;
+                display: flex;
+                align-items: flex-start;
+                width: 50%;
+
+                p{
+                    width: 100%;
+                    text-align: right;
+                }
+
+                a {
+                    color: ${props => props.theme['silk']};
+                }
+            }
+        }
     }
+`
+
+export const Contacts = styled.div`
+    gap: 0.25rem !important;
 `

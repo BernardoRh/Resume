@@ -1,8 +1,8 @@
 import { Dots } from "../../components/dots";
 import { ProgressBar } from "../../components/progressBar";
-import { ContainerCurriculum, ContainerContent } from "./styles";
+import { ContainerCurriculum, ContainerContent, Contacts } from "./styles";
 import Photo from './../../img/Bernardo-foto.png';
-import { WhatsappLogo, InstagramLogo, Envelope } from 'phosphor-react'
+import { WhatsappLogo, InstagramLogo, Envelope, LinkedinLogo, GithubLogo } from 'phosphor-react'
 
 
 export function Home(){
@@ -39,32 +39,44 @@ export function Home(){
                 <div>
                     <div>
                         <div>
-                            <Dots color="blue" size="sm"></Dots>
-                            <Dots color="pink" size="sm"></Dots>
-                            <Dots color="yellow" size="sm"></Dots>
+                            <Dots color="blue" size="md"></Dots>
+                            <Dots color="pink" size="md"></Dots>
+                            <Dots color="yellow" size="md"></Dots>
                         </div>
                         <div>
-                            <h4>Contatos</h4>
-                            <div>
+                            <h4>CONTATOS</h4>
+                            <Contacts>
                                 <span>
                                     <div>
-                                        <WhatsappLogo size={32} weight="fill"/>
+                                        <LinkedinLogo size={24} weight="fill" />
+                                        Bernardo Horbach
+                                    </div>
+                                </span>
+                                <span>
+                                    <div>
+                                        <Envelope size={24} weight="bold"/>
+                                        bernardo.horbach@gmail.com
+                                    </div>
+                                </span>
+                                <span>
+                                    <div>
+                                        <GithubLogo size={24} weight="fill" />
+                                        BernardoRh
+                                    </div>
+                                </span>
+                                <span>
+                                    <div>
+                                        <WhatsappLogo size={24} weight="fill"/>
                                         (51) 99017-9621
                                     </div>
                                 </span>
                                 <span>
                                     <div>
-                                        <InstagramLogo size={32} weight="fill" />
+                                        <InstagramLogo size={24} weight="fill" />
                                         bernardorh
                                     </div>
                                 </span>
-                                <span>
-                                    <div>
-                                        <Envelope size={32} weight="bold"/>
-                                        bernardo.horbach@gmail.com
-                                    </div>
-                                </span>
-                            </div>
+                            </Contacts>
                         </div>
                     </div>
                     <div>
@@ -134,7 +146,7 @@ export function Home(){
                             <Dots color="yellow" size="sm"></Dots>
                         </div>
                         <div>
-                            <h4>HÁBILIDADES</h4>
+                            <h4>HABILIDADES</h4>
                             <div>
                                 <div>
                                     <div>
@@ -175,6 +187,16 @@ export function Home(){
                             </div>
                         </div>
                     </div>
+                    <footer>
+                        <div>
+                            <span title="Inpirado por um layout do Cnava">
+                                <a href="https://www.canva.com/design/DAFNdk9UGk8/fQf3cW7k73rZtL6t1ZpDSg/view?utm_content=DAFNdk9UGk8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">LAYOUT</a>
+                            </span>
+                        </div>
+                        <div>
+                            <p>DESENVOLVEDOR WEB</p>
+                        </div>
+                    </footer>
                 </div>
             </ContainerContent>
         </ContainerCurriculum>
