@@ -6,6 +6,10 @@ export const ContainerCurriculum = styled.div`
     justify-content: center;
     flex:1;
 
+    @media (max-width: 768px) {
+        max-width: 24rem;
+    }
+
     main {
         background: ${props => props.theme['tab-blue-1000']};
         display: flex;

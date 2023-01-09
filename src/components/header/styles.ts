@@ -2,6 +2,13 @@ import styled from 'styled-components'
 
 export const HeaderContainer = styled.header`
     width: 100%;
+
+    @media (max-width: 768px) {
+        nav {
+            gap: 1rem !important;
+        }
+    }
+
     nav {
         display: flex;
         align-items: center;
