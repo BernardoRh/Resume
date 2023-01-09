@@ -28,4 +28,10 @@ export const GlobalStyle = createGlobalStyle`
         background: ${props => props.theme['tab-blue-800']};
         border: 1px solid ${props => props.theme['blue-dark-gray']};
     }
+
+    @media (max-width: 768px) {
+        html {
+            font-size: 87%;
+        }
+    }
 `

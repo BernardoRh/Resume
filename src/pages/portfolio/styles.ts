@@ -7,6 +7,10 @@ export const ContainerPortifolio = styled.div`
     flex-direction: column;
     gap: 1rem;
 
+    @media (max-width: 768px) {
+        max-width: 24rem;
+    }
+
     main {
         text-align: center;
     }

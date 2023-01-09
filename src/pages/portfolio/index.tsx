@@ -2,6 +2,7 @@ import { Dots } from "../../components/dots"
 import { ContainerPortifolio } from "./styles"
 import ImageFundamentosReact from "./img/fundamentos.png"
 import ImageDesafio01React from "./img/desafio01.png"
+import { StorybookSvg } from "./img/Icons/storybook"
 
 export function Portfolio(){
     return(
@@ -9,7 +10,7 @@ export function Portfolio(){
             <main>
                 <h1>PROJETOS</h1>
             </main>
-            <a href="#" target="_blank">
+            <a href="https://bernardorh.github.io/01-fundamentos-reactjs/" target="_blank">
                 <div>
                     <div>
                         <div>
