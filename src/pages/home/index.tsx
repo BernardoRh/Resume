@@ -190,7 +190,7 @@ export function Home(){
                     <footer>
                         <div>
                             <span title="Inpirado por um layout do Cnava">
-                                <a href="https://www.canva.com/design/DAFNdk9UGk8/fQf3cW7k73rZtL6t1ZpDSg/view?utm_content=DAFNdk9UGk8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">LAYOUT</a>
+                                <a target="_blank" href="https://www.canva.com/design/DAFNdk9UGk8/fQf3cW7k73rZtL6t1ZpDSg/view?utm_content=DAFNdk9UGk8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">LAYOUT</a>
                             </span>
                         </div>
                         <div>

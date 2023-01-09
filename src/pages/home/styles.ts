@@ -1,13 +1,40 @@
 import styled from "styled-components";
 
 export const ContainerCurriculum = styled.div`
-    max-width: 74rem;
+    max-width: 64rem;
     align-items: center;
     justify-content: center;
     flex:1;
 
     @media (max-width: 768px) {
         max-width: 24rem;
+
+        main {
+            max-width: 24rem;
+
+            div:last-child {
+                flex-direction: column !important;
+
+                h1 {
+                    /* font-size: 1.25rem !important; */
+                    text-align: center;
+                    margin-left: 0 !important;
+                }
+
+                div {
+                    div {
+                        h4 {
+                            width: 100%;
+                            text-align: center;
+                        }
+                        p {
+                            text-align: center;
+                            font-size: 0.875rem !important;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     main {
@@ -125,6 +152,14 @@ export const ContainerContent = styled.div`
     flex-direction: row;
     gap: 1.5rem;
     margin-bottom: 2.5rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+
+        div {
+            width: 100% !important;
+        }
+    }
 
     div {
         margin: 0;
