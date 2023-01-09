@@ -120,6 +120,10 @@ Error generating stack: `+i.message+`
     justify-content: center;
     flex:1;
 
+    @media (max-width: 768px) {
+        max-width: 24rem;
+    }
+
     main {
         background: ${e=>e.theme["tab-blue-1000"]};
         display: flex;
@@ -518,6 +522,13 @@ Error generating stack: `+i.message+`
     }
 `,cv="/Resume/assets/fundamentos-2be85b66.png",dv="/Resume/assets/desafio01-0dfabb17.png";function fv(){return M(sv,{children:[x("main",{children:x("h1",{children:"PROJETOS"})}),x("a",{href:"https://bernardorh.github.io/01-fundamentos-reactjs/",target:"_blank",children:M("div",{children:[M("div",{children:[M("div",{children:[x(X,{color:"yellow",size:"md"}),x(X,{color:"blue",size:"md"}),x(X,{color:"pink",size:"md"})]}),x("h3",{children:"FUNDAMENTOS REACT"})]}),x("div",{children:x("img",{src:cv})})]})}),x("a",{href:"#",target:"_blank",children:M("div",{children:[M("div",{children:[M("div",{children:[x(X,{color:"blue",size:"md"}),x(X,{color:"yellow",size:"md"}),x(X,{color:"pink",size:"md"})]}),x("h3",{children:"DESAFIO 01 IGNITE"})]}),x("div",{children:x("img",{src:dv})})]})})]})}const pv=jt.header`
     width: 100%;
+
+    @media (max-width: 768px) {
+        nav {
+            gap: 1rem !important;
+        }
+    }
+
     nav {
         display: flex;
         align-items: center;
@@ -588,7 +599,7 @@ Error generating stack: `+i.message+`
 
     @media (max-width: 768px) {
         html {
-            font-size: 87%;
+            font-size: 77%;
         }
     }
 `;function wv(){return M(N1,{theme:yv,children:[x(Um,{children:x(gv,{})}),x(kv,{})]})}Ol.createRoot(document.getElementById("root")).render(x(p.StrictMode,{children:x(wv,{})}));
