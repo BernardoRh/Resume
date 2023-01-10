@@ -553,8 +553,7 @@ Error generating stack: `+i.message+`
             &:last-child {
                 display: flex;
                 flex-direction: column;
-                border: 2px solid ${e=>e.theme["blue-dark-gray"]};
-                outline: 1px solid ${e=>e.theme["tab-blue-1000"]};
+                border: 1px solid ${e=>e.theme["blue-dark-gray"]};
                 grid-column-start: 1;
                 grid-column-end: second;
                 max-height: 22rem;
