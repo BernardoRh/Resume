@@ -69,7 +69,7 @@ export function Portfolio({setedLanguage}: PortfolioProps){
                             <Dots color="yellow" size="md"/>
                             <Dots color="blue" size="md"/>
                         </div>
-                        <h3>IGNITE - {setedLanguage == "PT-BR" ? "TEMPORIZADOR" : "TIMER"}</h3>
+                        <h3>IGNITE - {setedLanguage == "PT-BR" ? "TEMPORIZADOR (EM ANDAMENTO)" : "TIMER (ONGOING)"}</h3>
                     </div>
                     <div>
                         <img src={ImageIgniteTime}/>
