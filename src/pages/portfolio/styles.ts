@@ -48,8 +48,7 @@ export const ContainerPortifolio = styled.div`
             &:last-child {
                 display: flex;
                 flex-direction: column;
-                border: 2px solid ${props => props.theme['blue-dark-gray']};
-                outline: 1px solid ${props => props.theme['tab-blue-1000']};
+                border: 1px solid ${props => props.theme['blue-dark-gray']};
                 grid-column-start: 1;
                 grid-column-end: second;
                 max-height: 22rem;
