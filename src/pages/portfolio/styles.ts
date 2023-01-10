@@ -5,7 +5,6 @@ export const ContainerPortifolio = styled.div`
     width: 54rem;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
 
     @media (max-width: 768px) {
         max-width: 24rem;
@@ -13,11 +12,13 @@ export const ContainerPortifolio = styled.div`
 
     main {
         text-align: center;
+        margin-bottom: 1.5rem;
     }
 
     a {
         text-decoration: none;
         color: ${props => props.theme['blue-dark-gray']};
+        margin-bottom: 1.5rem;
 
         div {
             display: grid;

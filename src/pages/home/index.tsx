@@ -26,11 +26,13 @@ export function Home({setedLanguage}: HomeProps){
                         <div>
                             <h4>{setedLanguage == "PT-BR" ? "DESENVOLVEDOR WEB" : "WEB DEVELOPER"}</h4>
                             <p>
-                                Estou iniciando a carreira e aperfeiçoando as minhas habilidades.
-                                Possuo uma ótima capacidade de planejar e criar UI, trago um traço próprio
-                                de criatividade que me ajuda no aperfeiçoamento de meus projetos.
-                                Sou performático e focado, estando sempre antenado nas novas tecnologias.
-                                Possuo experiência em projetos, você pode conferir alguns deles disponíveis no meu portfólio.
+                                {
+                                    setedLanguage == "PT-BR"
+                                    ?
+                                    "Estou iniciando a carreira e aperfeiçoando as minhas habilidades. Possuo uma ótima capacidade de planejar e criar UI, trago um traço próprio de criatividade que me ajuda no aperfeiçoamento de meus projetos. Sou performático e focado, estando sempre antenado nas novas tecnologias. Possuo experiência em projetos, você pode conferir alguns deles disponíveis no meu portfólio."
+                                    :
+                                    "I’m starting my career and improving my skills. I won a grate capacity to plan and make UI, bring my own trait of creativity that helps me improve my projects. I’m performative and focused, being always tuned to new technologies. Own experience with projects, you can confer some of them available in my portfolio."
+                                }
                             </p>
                             <div>
                             </div>
@@ -47,7 +49,7 @@ export function Home({setedLanguage}: HomeProps){
                             <Dots color="yellow" size="md"></Dots>
                         </div>
                         <div>
-                            <h4>CONTATOS</h4>
+                            <h4>{setedLanguage == "PT-BR" ? "CONTATOS" : "CONTACTS" }</h4>
                             <Contacts>
                                 <span>
                                     <a target="_blank" href="https://www.linkedin.com/in/bernardo-horbach-442222202/">
@@ -89,10 +91,16 @@ export function Home({setedLanguage}: HomeProps){
                             <Dots color="yellow" size="sm"></Dots>
                         </div>
                         <div>
-                            <h4>ESCOLARIDADE</h4>
+                            <h4>{setedLanguage == "PT-BR" ? "EDUCAÇÃO" : "EDUCATION"}</h4>
                             <div>
                                 <span>
-                                    <h5>Curso Técnico em TI Integrado</h5>
+                                    <h5>
+                                        {
+                                            setedLanguage == "PT-BR" ?
+                                            "Curso Técnico de TI" :
+                                            "Technical IT Course"
+                                        }
+                                    </h5>
                                     <p>
                                         Instituto Federal RS - Campus Rolante
                                     </p>
@@ -107,16 +115,22 @@ export function Home({setedLanguage}: HomeProps){
                             <Dots color="pink" size="sm"></Dots>
                         </div>
                         <div>
-                            <h4>CERTIFICAÇÕES</h4>
+                            <h4>{setedLanguage == "PT-BR" ? "CERTIFICAÇÕES" : "CERTIFICATIONS"}</h4>
                             <div>
                                 <span>
-                                    <h5>Curso de Manutenção de Hardware</h5>
+                                    <h5>{setedLanguage == "PT-BR" ? "Curso de Manutenção de Hardware" : "Hardware Maintenance Course"}</h5>
                                     <p>
                                         Unialcance - Rolante / RS
                                     </p>
                                 </span>
                                 <span>
-                                    <h5>Curso de Desenvolvimento Web - Ignite</h5>
+                                    <h5>
+                                        {
+                                            setedLanguage == "PT-BR" ?
+                                            "Curso de Desenvolvimento Web Com ReactJS - Ignite (Em Andamento)" :
+                                            "Web Develop Course With ReactJS - Ignite (Ongoing)"
+                                        }
+                                    </h5>
                                     <p>
                                         Rocketseat
                                     </p>
@@ -133,11 +147,11 @@ export function Home({setedLanguage}: HomeProps){
                             <Dots color="yellow" size="sm"></Dots>
                         </div>
                         <div>
-                            <h4>LINGUAS</h4>
+                            <h4>{setedLanguage == "PT-BR" ? "LINGUAS" : "LANGUAGES"}</h4>
                             <div>
                                 <ul>
-                                    <li>Portugês - 🇧🇷</li>
-                                    <li>Inglês - 🇺🇸</li>
+                                    <li>{setedLanguage == "PT-BR" ? "Português - 🇧🇷" : "Portuguese - 🇧🇷"}</li>
+                                    <li>{setedLanguage == "PT-BR" ? "Inglês - 🇺🇸": "English - 🇺🇸"}</li>
                                 </ul>
                             </div>
                         </div>
@@ -149,7 +163,7 @@ export function Home({setedLanguage}: HomeProps){
                             <Dots color="yellow" size="sm"></Dots>
                         </div>
                         <div>
-                            <h4>HABILIDADES</h4>
+                            <h4>{setedLanguage == "PT-BR" ? "HABILIDADES" : "SKILLS"}</h4>
                             <div>
                                 <div>
                                     <div>
@@ -175,14 +189,18 @@ export function Home({setedLanguage}: HomeProps){
                             <Dots color="pink" size="md"></Dots>
                         </div>
                         <div>
-                            <h4>EXPERIÊNCIAS PROFISSIONAIS</h4>
+                            <h4>{setedLanguage == "PT-BR" ? "EXPERIÊNCIAS PROFISSIONAIS" : "PROFESSIONAL EXPERIENCE"}</h4>
                             <div>
                                 <span>
                                     <h5>Bruno Santoni Becker Papéis (2021-2022)</h5>
-                                    <h6>Auxiliar de Escritório</h6>
+                                    <h6>{setedLanguage == "PT-BR" ? "Auxiliar de Escritório" : "Office Assistant"}</h6>
                                     <p>
-                                        Auxiliar na preparação e desenvolvimento de propostas para licitações públicas, além de
-                                        contribuir no controle de produção e qualidade.
+                                        {
+                                            setedLanguage == "PT-BR" ?
+                                            "Auxiliar na preparação e desenvolvimento de propostas para licitações públicas, além de contribuir no controle de produção e qualidade."
+                                            :
+                                            "Assistant in preparation and development of proposal for public bids, besides contributing with the production control and quality"
+                                        }
                                     </p>
                                 </span>
                             </div>
@@ -190,12 +208,12 @@ export function Home({setedLanguage}: HomeProps){
                     </div>
                     <footer>
                         <div>
-                            <span title="Inpirado por um layout do Cnava">
+                            <span title="Inspirado por um layout do Canva">
                                 <a target="_blank" href="https://www.canva.com/design/DAFNdk9UGk8/fQf3cW7k73rZtL6t1ZpDSg/view?utm_content=DAFNdk9UGk8&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">LAYOUT</a>
                             </span>
                         </div>
                         <div>
-                            <p>DESENVOLVEDOR WEB</p>
+                            <p>{setedLanguage == "PT-BR" ? "DESENVOLVEDOR WEB" : "WEB DEVELOPER"}</p>
                         </div>
                     </footer>
                 </div>
