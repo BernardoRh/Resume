@@ -58,19 +58,19 @@ export function Home({setedLanguage}: HomeProps){
                                     </a>
                                 </span>
                                 <span>
-                                    <div>
+                                    <a href="mailto:bernardo.horbach@gmail.com" >
                                         <Envelope size={24} weight="bold"/>
                                         bernardo.horbach@gmail.com
-                                    </div>
+                                    </a>
                                 </span>
                                 <span>
-                                    <a target="_blank" href="">
+                                    <a target="_blank" href="https://github.com/BernardoRh/">
                                         <GithubLogo size={24} weight="fill" />
                                         BernardoRh
                                     </a>
                                 </span>
                                 <span>
-                                    <a target="_blank" href="">
+                                    <a target="_blank" href="https://wa.me/qr/4SPTIQH64JRSN1">
                                         <WhatsappLogo size={24} weight="fill"/>
                                         (51) 99017-9621
                                     </a>
