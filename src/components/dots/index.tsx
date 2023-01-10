@@ -2,7 +2,7 @@ import { ContainerDots } from "./styles"
 
 export interface DotsProps {
     color: 'blue' | 'pink' | 'yellow',
-    size: 'sm' | 'md' | 'lg'
+    size: 'xsm' | 'sm' | 'md' | 'lg'
 }
 
 export function Dots({color, size}: DotsProps){

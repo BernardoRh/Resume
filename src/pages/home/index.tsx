@@ -4,8 +4,11 @@ import { ContainerCurriculum, ContainerContent, Contacts } from "./styles";
 import Photo from './../../img/Bernardo-foto.png';
 import { WhatsappLogo, InstagramLogo, Envelope, LinkedinLogo, GithubLogo } from 'phosphor-react'
 
+interface HomeProps {
+    setedLanguage: string,
+}
 
-export function Home(){
+export function Home({setedLanguage}: HomeProps){
     return(
         <ContainerCurriculum>
             <main>
@@ -21,7 +24,7 @@ export function Home(){
                             src="https://github.com/BernardoRh.png"
                         />
                         <div>
-                            <h4>DESENVOLVEDOR WEB</h4>
+                            <h4>{setedLanguage == "PT-BR" ? "DESENVOLVEDOR WEB" : "WEB DEVELOPER"}</h4>
                             <p>
                                 Estou iniciando a carreira e aperfeiçoando as minhas habilidades.
                                 Possuo uma ótima capacidade de planejar e criar UI, trago um traço próprio
@@ -47,10 +50,10 @@ export function Home(){
                             <h4>CONTATOS</h4>
                             <Contacts>
                                 <span>
-                                    <div>
+                                    <a target="_blank" href="https://www.linkedin.com/in/bernardo-horbach-442222202/">
                                         <LinkedinLogo size={24} weight="fill" />
                                         Bernardo Horbach
-                                    </div>
+                                    </a>
                                 </span>
                                 <span>
                                     <div>
@@ -59,22 +62,22 @@ export function Home(){
                                     </div>
                                 </span>
                                 <span>
-                                    <div>
+                                    <a target="_blank" href="">
                                         <GithubLogo size={24} weight="fill" />
                                         BernardoRh
-                                    </div>
+                                    </a>
                                 </span>
                                 <span>
-                                    <div>
+                                    <a target="_blank" href="">
                                         <WhatsappLogo size={24} weight="fill"/>
                                         (51) 99017-9621
-                                    </div>
+                                    </a>
                                 </span>
                                 <span>
-                                    <div>
+                                    <a target="_blank" href="https://www.instagram.com/bernardorh/">
                                         <InstagramLogo size={24} weight="fill" />
                                         bernardorh
-                                    </div>
+                                    </a>
                                 </span>
                             </Contacts>
                         </div>
@@ -177,12 +180,10 @@ export function Home(){
                                 <span>
                                     <h5>Bruno Santoni Becker Papéis (2021-2022)</h5>
                                     <h6>Auxiliar de Escritório</h6>
-                                    <ul>
-                                        <li>
-                                            Auxiliar na preparação e desenvolvimento de propostas para licitações públicas, além de
-                                            contribuir no controle de produção e qualidade.
-                                        </li>
-                                    </ul>
+                                    <p>
+                                        Auxiliar na preparação e desenvolvimento de propostas para licitações públicas, além de
+                                        contribuir no controle de produção e qualidade.
+                                    </p>
                                 </span>
                             </div>
                         </div>

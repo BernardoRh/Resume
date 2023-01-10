@@ -4,11 +4,15 @@ import ImageFundamentosReact from "./img/fundamentos.png"
 import ImageDesafio01React from "./img/desafio01.png"
 import { StorybookSvg } from "./img/Icons/storybook"
 
-export function Portfolio(){
+interface PortfolioProps {
+    setedLanguage: string,
+}
+
+export function Portfolio({setedLanguage}: PortfolioProps){
     return(
         <ContainerPortifolio>
             <main>
-                <h1>PROJETOS</h1>
+                <h1>{setedLanguage == "PT-BR"? "PROJETOS": "PROJECTS"}</h1>
             </main>
             <a href="https://bernardorh.github.io/01-fundamentos-reactjs/" target="_blank">
                 <div>

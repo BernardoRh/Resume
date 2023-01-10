@@ -6,6 +6,9 @@ export const HeaderContainer = styled.header`
     @media (max-width: 768px) {
         nav {
             gap: 1rem !important;
+            a {
+                font-size: 1rem !important;
+            }
         }
     }
 
@@ -14,11 +17,13 @@ export const HeaderContainer = styled.header`
         align-items: center;
         justify-content: center;
         padding: 0.5rem;
-        gap: 4rem;
+        gap: 3rem;
         background: ${props => props.theme['tab-blue-1000']};
 
         a {
             color: ${props => props.theme['tab-blue-200']};
+            width: 8rem;
+            text-align: center;
             text-decoration: none;
             font-size: 1.25rem;
             font-weight: 800;
@@ -38,6 +43,7 @@ export const HeaderContainer = styled.header`
         div {
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 0.75rem;
             flex-direction: row;
         }

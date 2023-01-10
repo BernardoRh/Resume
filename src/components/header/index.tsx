@@ -1,20 +1,32 @@
 import { NavLink } from 'react-router-dom';
 import { HeaderContainer } from "./styles";
+import { useState } from 'react';
 import { Dots } from '../dots';
 
 import LogoImage from './../../img/Marca.png';
+import { Language } from './Language';
 
-export function Header(){
+interface HeaderProps {
+    getSetedLanguage: (setedeLanguage: string) => void;
+}
+
+export function Header({getSetedLanguage}: HeaderProps){
+
+    const [language, setLanguage] = useState("PT-BR");
+
+    function handleSetLanguage(setedLanguage: string) {
+        setLanguage(setedLanguage);
+        getSetedLanguage(setedLanguage);
+    }
+
     return(
         <HeaderContainer>
             <nav>
-                <NavLink to="/" title="Currículo">Currículo</NavLink>
+                <NavLink to="/" title="Currículo">{language == "PT-BR" ? "CURRÍCULO" : 'RESUME'}</NavLink>
                 <div>
-                    <Dots size='md' color='pink'/>
-                    <Dots size='md' color='blue'/>
-                    <Dots size='md' color='yellow'/>
+                    <Language getSetedLanguage={handleSetLanguage}/>
                 </div>
-                <NavLink to="/portfolio" title="Portfólio">Portifólio</NavLink>
+                <NavLink to="/portfolio" title="Portfólio">{language == "PT-BR" ? "PORTFÓLIO" : 'PORTFOLIO'}</NavLink>
             </nav>
         </HeaderContainer>
     );

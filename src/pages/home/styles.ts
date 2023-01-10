@@ -140,7 +140,6 @@ export const ContainerCurriculum = styled.div`
                     }
                 }
             }
-
         }
     }
 `
@@ -385,4 +384,15 @@ export const ContainerContent = styled.div`
 
 export const Contacts = styled.div`
     gap: 0.25rem !important;
+    
+    span {
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 800;
+            gap: 0.75rem;
+            color: ${props => props.theme['blue-dark-gray']}
+        }
+    }
 `

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const DOTS_SIZE = {
+    'xsm': '0.5rem',
     'sm': '1rem',
     'md': '1.5rem',
     'lg': '2rem',
