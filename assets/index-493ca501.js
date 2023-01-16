@@ -484,6 +484,12 @@ Error generating stack: `+i.message+`
     justify-content: space-between !important;
     align-items: center !important;
 
+    @media (max-width: 768px) {
+        img {
+            height: 50% !important;
+        }
+    }
+
     img {
         padding-top: 0.15rem;
         padding-bottom: 0.15rem;
