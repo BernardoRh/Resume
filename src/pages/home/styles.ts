@@ -312,7 +312,7 @@ export const ContainerContent = styled.div`
                             
                             ul {
                                 display: flex;
-                                flex-direction: column;
+                                flex-direction: row;
                                 justify-content: flex-start;
                                 align-items: flex-start;
                                 gap: 0.25rem;
@@ -326,11 +326,7 @@ export const ContainerContent = styled.div`
                                     gap: 1rem;
 
                                     &::before {
-                                        content: '';
-                                        width: 0.5rem;
-                                        height: 0.5rem;
-                                        border-radius: 50%;
-                                        background: ${props => props.theme['blue-dark-gray']}
+                                        display: none;
                                     }
                                 }
                             }
@@ -393,6 +389,43 @@ export const Contacts = styled.div`
             font-weight: 800;
             gap: 0.75rem;
             color: ${props => props.theme['blue-dark-gray']}
+        }
+    }
+`
+
+export const ContainerSkills = styled.div `
+    padding: 0.75rem !important;
+    background: transparent !important;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center !important;
+
+    img {
+        padding-top: 0.15rem;
+        padding-bottom: 0.15rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+
+        &:hover {
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.45));
+        }
+    }
+
+    div:last-child {
+        justify-content: center !important;
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between !important;
+        align-items: center !important;
+        height: 3.5rem;
+
+        div {
+            display: flex;
+            flex-direction: row !important;
+            justify-content: center !important;
+            border: 1px dotted ${props => props.theme['blue-dark-gray']} !important;
         }
     }
 `

@@ -1,8 +1,9 @@
 import { Dots } from "../../components/dots";
 import { ProgressBar } from "../../components/progressBar";
-import { ContainerCurriculum, ContainerContent, Contacts } from "./styles";
+import { ContainerCurriculum, ContainerContent, Contacts, ContainerSkills } from "./styles";
 import Photo from './../../img/Bernardo-foto.png';
 import { WhatsappLogo, InstagramLogo, Envelope, LinkedinLogo, GithubLogo } from 'phosphor-react'
+import { TechIcon } from './../../components/techIcon'
 
 interface HomeProps {
     setedLanguage: string,
@@ -164,22 +165,35 @@ export function Home({setedLanguage}: HomeProps){
                         </div>
                         <div>
                             <h4>{setedLanguage == "PT-BR" ? "HABILIDADES" : "SKILLS"}</h4>
-                            <div>
+                            <ContainerSkills>
                                 <div>
+                                    <TechIcon icon="CssIcon" height="48"/>
+                                    <TechIcon icon="HtmlIcon" height="48"/>
+                                    <TechIcon icon="JavaScriptIcon" height="48"/>
+                                    <TechIcon icon="PhpIcon" height="48"/>
+                                </div>
+                                <div>
+                                    <TechIcon icon="NodeIcon" height="32"/>
+                                    <TechIcon icon="TypeScriptIcon" height="48"/>
                                     <div>
-                                        <ul>
-                                            <li>React</li>
-                                            <li>Figma</li>
-                                            <li>TypeScript</li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <ProgressBar percentage={53}/>
-                                        <ProgressBar percentage={67}/>
-                                        <ProgressBar percentage={60}/>
+                                        <TechIcon icon="ReactIcon" height="48"/>
+                                        <TechIcon icon="StorybookIcon" height="48"/>
+                                        <TechIcon icon="StyledComponentsIcon" height="48"/>
                                     </div>
                                 </div>
-                            </div>
+                                <div>
+                                    <div>
+                                        <TechIcon icon="MysqlIcon" height="48"/>
+                                        <TechIcon icon="MongodbIcon" height="32"/>
+                                    </div>
+                                    <TechIcon icon="PythonIcon" height="48"/>
+                                    <TechIcon icon="JavaIcon" height="48"/>
+                                </div>
+                                <div>
+                                    <TechIcon icon="GitIcon" height="48"/>
+                                    <TechIcon icon="FigmaIcon" height="48"/>
+                                </div>
+                            </ContainerSkills>
                         </div>
                     </div>
                     <div>

@@ -4,7 +4,6 @@ import ImageFundamentosReact from "./img/fundamentos.png"
 import ImageDesafio01React from "./img/desafio01.png"
 import ImageIgniteDS from "./img/igniteDS.png"
 import ImageIgniteTime from "./img/igniteTime.png"
-import { StorybookSvg } from "./img/Icons/storybook"
 
 interface PortfolioProps {
     setedLanguage: string,
