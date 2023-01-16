@@ -170,13 +170,14 @@ export function Home({setedLanguage}: HomeProps){
                                     <TechIcon icon="CssIcon" height="48"/>
                                     <TechIcon icon="HtmlIcon" height="48"/>
                                     <TechIcon icon="JavaScriptIcon" height="48"/>
+                                    <TechIcon icon="TypeScriptIcon" height="48"/>
                                     <TechIcon icon="PhpIcon" height="48"/>
                                 </div>
                                 <div>
                                     <TechIcon icon="NodeIcon" height="32"/>
-                                    <TechIcon icon="TypeScriptIcon" height="48"/>
                                     <div>
                                         <TechIcon icon="ReactIcon" height="48"/>
+                                        <TechIcon icon="TailWindCssIcon" height="32"/>
                                         <TechIcon icon="StorybookIcon" height="48"/>
                                         <TechIcon icon="StyledComponentsIcon" height="48"/>
                                     </div>

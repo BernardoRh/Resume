@@ -14,9 +14,10 @@ import ReactIcon from "./Icons/react.svg"
 import StorybookIcon from "./Icons/storybook.png"
 import StyledComponentsIcon from "./Icons/styled-components.svg"
 import TypeScriptIcon from "./Icons/typescript.svg"
+import TailWindCssIcon from "./Icons/tailwind.svg"
 
 interface TechIcon extends ImgHTMLAttributes<HTMLImageElement> {
-    icon: "CssIcon" | "FigmaIcon" | "GitIcon" | "HtmlIcon" | "JavaIcon" | "JavaScriptIcon" | "MongodbIcon" | "MysqlIcon" | "NodeIcon" | "PhpIcon" | "PythonIcon" | "ReactIcon" | "StorybookIcon" | "StyledComponentsIcon" | "TypeScriptIcon"
+    icon: "TailWindCssIcon" | "CssIcon" | "FigmaIcon" | "GitIcon" | "HtmlIcon" | "JavaIcon" | "JavaScriptIcon" | "MongodbIcon" | "MysqlIcon" | "NodeIcon" | "PhpIcon" | "PythonIcon" | "ReactIcon" | "StorybookIcon" | "StyledComponentsIcon" | "TypeScriptIcon"
 }
 
 export function TechIcon({icon, ...props}: TechIcon) {
@@ -65,5 +66,8 @@ export function TechIcon({icon, ...props}: TechIcon) {
 
         case "TypeScriptIcon":
             return <img src={TypeScriptIcon} title="Type Script" {...props}/>
+
+        case "TailWindCssIcon":
+            return <img src={TailWindCssIcon} title="Tail Wind CSS" {...props}/>
     }
 }
