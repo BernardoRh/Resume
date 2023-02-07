@@ -1,5 +1,4 @@
 import { Dots } from "../../components/dots";
-import { ProgressBar } from "../../components/progressBar";
 import { ContainerCurriculum, ContainerContent, Contacts, ContainerSkills } from "./styles";
 import Photo from './../../img/Bernardo-foto.png';
 import { WhatsappLogo, InstagramLogo, Envelope, LinkedinLogo, GithubLogo } from 'phosphor-react'
@@ -32,7 +31,7 @@ export function Home({setedLanguage}: HomeProps){
                                     ?
                                     "Estou iniciando a carreira e aperfeiçoando as minhas habilidades. Possuo uma ótima capacidade de planejar e criar UI, trago um traço próprio de criatividade que me ajuda no aperfeiçoamento de meus projetos. Sou performático e focado, estando sempre antenado nas novas tecnologias. Possuo experiência em projetos, você pode conferir alguns deles disponíveis no meu portfólio."
                                     :
-                                    "I’m starting my career and improving my skills. I won a grate capacity to plan and make UI, bring my own trait of creativity that helps me improve my projects. I’m performative and focused, being always tuned to new technologies. Own experience with projects, you can confer some of them available in my portfolio."
+                                    "I’m starting my career and improving my skills. I have a great capacity to plan and make UI, bring my own trait of creativity that helps me improve my projects. I’m performative and focused, being always tuned to new technologies. Earn experience with projects, you can check some of them available in my portfolio."
                                 }
                             </p>
                             <div>
