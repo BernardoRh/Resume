@@ -68,10 +68,25 @@ export function Portfolio({setedLanguage}: PortfolioProps){
                             <Dots color="yellow" size="md"/>
                             <Dots color="blue" size="md"/>
                         </div>
-                        <h3>IGNITE - {setedLanguage == "PT-BR" ? "TEMPORIZADOR (EM ANDAMENTO)" : "TIMER (ONGOING)"}</h3>
+                        <h3>IGNITE - {setedLanguage == "PT-BR" ? "TEMPORIZADOR" : "TIMER"}</h3>
                     </div>
                     <div>
                         <img src={ImageIgniteTime}/>
+                    </div>
+                </div>
+            </a>
+            <a href="#" target="_blank">
+                <div>
+                    <div>
+                        <div>
+                            <Dots color="yellow" size="md"/>
+                            <Dots color="pink" size="md"/>
+                            <Dots color="blue" size="md"/>
+                        </div>
+                        <h3>{setedLanguage == "PT-BR" ? "FICHA - ORDEM PARANORMAL RPG (EM ANDAMENTO)" : "SHEET - ORDEM PARANORMAL RPG (ONGOING)"}</h3>
+                    </div>
+                    <div>
+                        <img src="https://i.imgur.com/sgM4mrz.png"/>
                     </div>
                 </div>
             </a>
