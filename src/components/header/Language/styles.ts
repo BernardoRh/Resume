@@ -21,7 +21,7 @@ export const ContainerLanguage = styled.div`
         img {
             object-fit: cover;
             border-radius: 8px;
-            filter: gray saturate(0%) brightness(70%) contrast(1000%);
+            filter: grayscale(60%);
 
             &:hover {
                 box-shadow: 1px 2px 3px ${props => props.theme['blue-dark-gray']};
