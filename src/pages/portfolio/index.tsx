@@ -73,7 +73,7 @@ const projects = [
             enus: "SHEET - ORDEM PARANORMAL RPG (ONGOING)",
             after: ""
         },
-        link: "#",
+        link: "https://github.com/BernardoRh/ordem-paranormal-ficha",
         dotsColor: {
             first: "pink",
             second: "yellow",
